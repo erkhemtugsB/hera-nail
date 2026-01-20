@@ -1313,14 +1313,25 @@ a[href*='tel'], a[href*='mailto'] {
 	font-weight: 400;
 }
 
+.pricing-list-classic {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 30px;
+}
+
 @media (min-width: 992px) {
 	.pricing-list-classic {
-		column-count: 2;
-		column-gap: 30px;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
-	.pricing-list-classic .pricing-classic-item:nth-child(4n + 4) {
-		border-bottom: none;
-	}
+}
+
+.pricing-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.pricing-column .pricing-classic-item:last-child {
+	border-bottom: none;
 }
 
 .pricing-box-modern {
