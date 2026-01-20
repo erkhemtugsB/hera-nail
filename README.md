@@ -1,2 +1,1 @@
-# nailsalon.github.io
-Nail Salon
+Hera Nail Salon
